@@ -1,0 +1,32 @@
+📝 如何启动项目
+
+步骤 1: 安装依赖（已完成）
+✅ npm install
+
+步骤 2: 配置 Supabase 环境变量
+1. 在项目根目录创建 .env 文件
+2. 复制以下内容到 .env 文件：
+
+VITE_SUPABASE_URL=你的Supabase项目URL
+VITE_SUPABASE_ANON_KEY=你的Supabase匿名密钥
+
+如何获取 Supabase 配置：
+1. 登录 https://app.supabase.com
+2. 进入你的项目
+3. 点击左侧 Settings（设置）
+4. 点击 API
+5. 复制：
+   - Project URL → 填入 VITE_SUPABASE_URL
+   - anon public key → 填入 VITE_SUPABASE_ANON_KEY
+
+步骤 3: 启动开发服务器
+在终端运行：
+npm run dev
+
+步骤 4: 打开浏览器
+访问：http://localhost:3000
+
+⚠️ 注意：
+- 如果没有配置 .env 文件，应用可能无法连接数据库
+- 确保 Supabase 中已创建 users、posts、comments 三张表
+
